@@ -11,7 +11,6 @@
 - [ ] Besides multispectral, could it be an advantage to add SAR data?
 - [ ] How does time series help us classify, and how would we implement that?
 
-testing
 ## How does MapBiomas do it?
 Here I write a short summary of [ATBD Collection 8 MapBiomas](https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2023/09/ATBD-Collection-8-v1.1.docx.pdf) and [ATBD MapBiomas Amazonia 4.0](https://s3.amazonaws.com/amazonia.mapbiomas.org/atbd/atbd%20general/ATBD_General_MapBiomas_Amazonia_4.0.pdf)including necessary Appendix info. 
 
