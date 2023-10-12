@@ -12,10 +12,15 @@
 - [ ] How does time series help us classify, and how would we implement that?
 
 Note: Brian and Morgane's previous efforts included using atmospherically corrected Landsat data, but only the 9 bands were input into random forest. His issue was that the training data would not be useful across footprints - training worked well for one footprint at a time only.
-Mapbiomas seems to improve on this issue by ==using 90 bands, and training the data for the whole country all at once, for each year==. This approach should work well for Panama.
+Mapbiomas seems to improve on this issue by ==using 90 features, and training the data for the whole country all at once, for each year==. This approach should work well for Panama.
 ## How does MapBiomas do it?
-Here I write a short summary of [ATBD Collection 8 MapBiomas](https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2023/09/ATBD-Collection-8-v1.1.docx.pdf) and [ATBD MapBiomas Amazonia 4.0](https://s3.amazonaws.com/amazonia.mapbiomas.org/atbd/atbd%20general/ATBD_General_MapBiomas_Amazonia_4.0.pdf)including necessary Appendix info. 
-
+Here I write a short summary of:
+- [ATBD Collection 8 MapBiomas](https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2023/09/ATBD-Collection-8-v1.1.docx.pdf)
+	- [Agriculture and Forest Plantation - Appendix C8](https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2023/09/Agriculture-and-Forest-Plantation-Appendix-C8-reviewed.pdf)
+	- [Amazon - Appendix C8](https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2023/08/Amazon-Appendix-ATBD-Collection-8.pdf)
+- [ATBD MapBiomas Amazonia 4.0](https://s3.amazonaws.com/amazonia.mapbiomas.org/atbd/atbd%20general/ATBD_General_MapBiomas_Amazonia_4.0.pdf) (including all amazonian countries)
+	- [Agricultura - Apéndice 4.0](https://s3.amazonaws.com/amazonia.mapbiomas.org/atbd/atbd%20transversales/Ap%C3%A9ndice_12_Agricultura_Colecci%C3%B3n_4.0.pdf)
+	- 
 [MapBiomas Brasil Github](https://github.com/mapbiomas-brazil) has the source code:
 - JS - image classification and post-classification
 - Python API - Map integration, post-classification, statistical analysis
@@ -90,7 +95,7 @@ Area disagreement
 [Working with U-net in R (github)](https://github.com/JonathanVSV/U-netR)
 [Using the U‐net convolutional network to map forest types and disturbance in the Atlantic rainforest with very high resolution images (Wagner et al 2019)](https://zslpublications.onlinelibrary.wiley.com/doi/epdf/10.1002/rse2.111)
 
-
+[Mapping tropical forest degradation with deep learning and Planet NICFI data - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0034425723003498#bb0030)
 
 There's a possibility that combining with SAR for the classification will be even better - but does that mean that using SAR as response will become redundant as far as the stats goes?
 [Land Use Land Cover Classification with U-Net: Advantages of Combining Sentinel-1 and Sentinel-2 Imagery](https://www.mdpi.com/2072-4292/13/18/3600#)
