@@ -11,6 +11,7 @@
 - [ ] Besides multispectral, could it be an advantage to add SAR data?
 - [ ] How does time series help us classify, and how would we implement that?
 
+testing
 ## How does MapBiomas do it?
 Here I write a short summary of [ATBD Collection 8 MapBiomas](https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2023/09/ATBD-Collection-8-v1.1.docx.pdf) and [ATBD MapBiomas Amazonia 4.0](https://s3.amazonaws.com/amazonia.mapbiomas.org/atbd/atbd%20general/ATBD_General_MapBiomas_Amazonia_4.0.pdf)including necessary Appendix info. 
 
@@ -59,7 +60,7 @@ Using Surface Reflectance (SR) from Landsat Collection 2 (Tier 1)
 6. **Maps were integrated** following prevalence rules.
 	- A temporal filter was applied on classes with less than three occurrences in the whole 38 year period
 	- A spatial filter was applied to remove isolated classes with less than half a hectare
-
+[TVI - Temporal Visual Inspection](https://github.com/lapig-ufg/tvi)
 Global Accuracy
 Allocation disagreement
 Area disagreement
